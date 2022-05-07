@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    padding: 0;
+    background-color: azure;
+    border-bottom: solid 1px #ffff;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+ .logo {
+     width: 100px;
+     height: 100px;
+ }
