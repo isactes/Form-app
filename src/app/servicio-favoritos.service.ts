@@ -5,6 +5,6 @@ import { EventEmitter } from 'stream';
   providedIn: 'root'
 })
 export class ServicioFavoritosService {
-  @Output() disparadorDeFavoritos: EventEmitter = new EventEmitter();
+  @Output() disparadorDeFavoritos: EventEmitter<any> = new EventEmitter();
   constructor() { }
 }
