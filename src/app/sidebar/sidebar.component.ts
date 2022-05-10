@@ -1,3 +1,4 @@
+import { ServicioFavoritosService } from './../servicio-favoritos.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private servicioFavorito: ServicioFavoritosService) { }
 
   ngOnInit(): void {
+    this.servicioFavorito.disparadorDeFavoritos.subscribe()
   }
 
 }
