@@ -1,6 +1,4 @@
-import { Injectable, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
-import { EventEmitter } from '@angular/core';
+import { EventEmitter, Injectable, Output  } from '@angular/core';
 
 
 @Injectable({

@@ -1,0 +1,16 @@
+.favoite-list{
+    background-color: aqua;
+    width: 500px;
+    height: auto ;
+    margin: 10px;
+}
+.card{
+    font-size: 2rem;
+}
+.mini-image{
+    width: 450px;
+    height: 300px;
+}
+.flex{
+    font-size: smaller;
+}

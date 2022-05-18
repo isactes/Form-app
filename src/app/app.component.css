@@ -1,7 +1,8 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    margin: 10px;
 }

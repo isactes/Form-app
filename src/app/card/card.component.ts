@@ -1,6 +1,6 @@
-import { EventEmitter } from 'stream';
-import { ServicioFavoritosService } from './../servicio-favoritos.service';
-import { Component, OnInit, Input } from '@angular/core';
+import { EventEmitter, Component, OnInit, Input } from '@angular/core';
+import { ServicioFavoritosService } from '../servicio-favoritos.service';
+
 
 @Component({
   selector: 'app-card',
@@ -10,7 +10,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() "dataEntrante":any;
   public "image":string;
-  constructor( private servicioFavorito: ServicioFavoritosService) { }
+
+  constructor(private servicioFavorito: ServicioFavoritosService) { }
 
   ngOnInit(): void {
     this.image = 'https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg';
@@ -19,9 +20,9 @@ export class CardComponent implements OnInit {
 
   agrearFavorito(){
     //console.log(this.dataEntrante);
-    this.servicioFavorito.disparadorDeFavoritos.EventEmitter({
+    this.servicioFavorito.disparadorDeFavoritos.emit({
       data:this.dataEntrante
-    })
+    });
   }
 
 }

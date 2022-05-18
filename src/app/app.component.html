@@ -1,8 +1,12 @@
 <app-header> </app-header>
 <!---las carsd-->
 <div class="grid">
-  <app-card [dataEntrante] = "detalleVideo"  *ngFor="let detalleVideo of listdeVideos"></app-card>
+  
+    <app-card app-card [dataEntrante] = "detalleVideo"  *ngFor="let detalleVideo of listdeVideos"></app-card>
+  
 </div>
+<!----Lista de Favoritos--->
+<app-sidebar></app-sidebar>
 
 
 

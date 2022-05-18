@@ -24,7 +24,12 @@ export class AppComponent implements OnInit {
       {
         title:'videobox3',
         subtitle:'subbox3',
-        img:'https://pixabay.com/es/photos/luna-luna-llena-cielo-1859616/'
+        img:'https://cdn.pixabay.com/photo/2016/03/18/15/02/ufo-1265186_960_720.jpg'
+      },
+      {
+        title:'videobox4',
+        subtitle:'subbox4',
+        img:'https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_960_720.png'
       }
     ];
   }

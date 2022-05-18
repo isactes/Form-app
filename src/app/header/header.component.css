@@ -1,8 +1,8 @@
 .header {
-    width: 100%;
+    width: auto;
     padding: 0;
-    background-color: azure;
-    border-bottom: solid 1px #ffff;
+    background-color: black;
+    border-bottom: solid 3px #aaa;
 }
 .menu {
     margin: 0;
@@ -13,7 +13,13 @@
     align-content: center;
     justify-content: space-evenly;
 }
+.menu > li{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+}
  .logo {
      width: 100px;
-     height: 100px;
+     height: 50px;
  }
