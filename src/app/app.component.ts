@@ -1,4 +1,8 @@
+import { RestService } from './rest.service';
 import { Component, OnInit } from '@angular/core';
+import { ServicioFavoritosService } from './servicio-favoritos.service';
+import { subscribeOn } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -8,29 +12,18 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Form-app';
 
-  public "listdeVideos":Array<any> = [];
+  public "listdeVideos":any = [];
+
+  constructor(private RestService:RestService){
+
+  }
+
   ngOnInit(): void {
-    this.listdeVideos = [
-      {
-        title:'videobox1',
-        subtitle:'subbox1',
-        img:'https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg'
-      },
-      {
-        title:'videobox2',
-        subtitle:'subbox2',
-        img:'https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_960_720.jpg'
-      },
-      {
-        title:'videobox3',
-        subtitle:'subbox3',
-        img:'https://cdn.pixabay.com/photo/2016/03/18/15/02/ufo-1265186_960_720.jpg'
-      },
-      {
-        title:'videobox4',
-        subtitle:'subbox4',
-        img:'https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_960_720.png'
-      }
-    ];
+    this.cargarData();
+  }
+
+  public cargarData(){
+    this.RestService.get('https://api-uat.kushkipagos.com');
+    
   }
 }
